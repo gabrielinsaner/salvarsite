@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "titulo": "Notícia de exemplo",
+    "conteudo": "Essa é uma notícia salva localmente.",
+    "imagem": "https://via.placeholder.com/300",
+    "data": "14/06/2025"
+  }
+]
