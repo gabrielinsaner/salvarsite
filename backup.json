@@ -1,9 +1,16 @@
 [
   {
     "id": 1,
-    "titulo": "Notícia de exemplo",
-    "conteudo": "Essa é uma notícia salva localmente.",
-    "imagem": "https://via.placeholder.com/300",
+    "titulo": "Servidor funcionando via backup",
+    "conteudo": "Essa notícia foi carregada mesmo com a API original offline.",
+    "imagem": "https://via.placeholder.com/400x200.png?text=Backup",
+    "data": "14/06/2025"
+  },
+  {
+    "id": 2,
+    "titulo": "Exemplo de notícia 2",
+    "conteudo": "Você pode adicionar quantas quiser no backup.json.",
+    "imagem": "",
     "data": "14/06/2025"
   }
 ]
