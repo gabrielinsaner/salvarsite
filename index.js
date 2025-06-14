@@ -1,10 +1,9 @@
-
 const express = require('express');
 const axios = require('axios');
 const fs = require('fs');
 const app = express();
 
-const PORT = 3000; // Porta do seu servidor local
+const PORT = process.env.PORT || 3000;
 const API_URL = 'https://kgrp-api.onrender.com/noticias';
 const BACKUP_FILE = 'backup.json';
 
@@ -22,7 +21,6 @@ app.get('/noticias', async (req, res) => {
   } catch (err) {
     console.log('⚠️ Erro na API, carregando backup local');
 
-    // Se a API falhar, tenta ler o arquivo local
     if (fs.existsSync(BACKUP_FILE)) {
       const backup = fs.readFileSync(BACKUP_FILE);
       res.json(JSON.parse(backup));
